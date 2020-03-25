@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "open sans", helvetica, arial, sans;
+    /* background: linear-gradient(rgba(0,0,0,0.603),rgba(0,0,0,0.849)) ,url(testImage.jpg) no-repeat center center fixed; */
+    /* background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), url(testImage.jpg)no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-sie: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+
+  }
+
+  .PNG{
+      position: fixed;;
+      width: 100%;;
+      right: 0;
+      top: 0;
+      z-index: -1;
+  }  
+  
+  .bg{
+      background: url("PngTree.png")no-repeat;
+      z-index: -1;
+      width: 100%;
+      height: 100vh;
+      background-size: 120%;
+  }
+  @media only screen and (max-width: 800px) {
+      .bg{
+          background-size: 300%;
+      }
+  }
+
+
+  .logo{
+      display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .log-form {
+    
+    width: 100%;
+    height: 800px ;
+   
+    min-width: 320px;
+    max-width: 475px;
+    background: rgba(2, 71, 66, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Fredoka One', cursive;
+  }
+  .log-form {
+    padding: 2em;
+    -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+    -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+    box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  }
+  
+  form {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  input, textarea{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgb(24, 23, 23);
+    outline: none;
+    background: transparent;
+    transition: border 0.5s;
+    color:black ;
+  }
+
+  .btn{
+      border: none;
+      width: 190px;
+      background: black;
+      color: white;
+      font-size: 16px; 
+      border-radius: 15px;
+      line-height: 25px;
+      padding: 10px 0; 
+  }
+
+  .form-content{
+      font-family: 'Fredoka One', cursive;
+      margin: auto;
+      background: transparent;
+      padding: 10px 0;
+      color: black;
+      
+  }
+  .txt{
+      vertical-align: middle;
+  }
+  .focus{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    background: transparent;
+    transition: border-width 0.5s linear;
+    color:black ;
+    font-size: 1.3em;
+
+  }
+
+  .bold{
+      font-size: 1.3em;
+  }
+  .show {
+      display: block;
+  }
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+      label textarea{
+          vertical-align: text-top;
+      }
+  </style>
+
+  
+    
+
+</head>
+<body>
+  <!-- Beautify This -->
+    <section class="container-fluid bg">
+
+        <div class="col-lg-4 log-form">
+        <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo"  alt="">
+
+            <h2 style="margin-top: 20px;" >ENTER YOUR DETAILS</h2>
+            <form onsubmit="return validation()" action="success.html"  >
+                <div class="form-content">
+                    <label for="username">Username : </label>
+                    <input onfocus="highlight(this)" onblur="regular(this)" id="username" type="text" title="username" placeholder="ex@JamesBond_07" required />
+                    
+                </div>
+                <div class="form-content">
+                    <label for="exampleInputEmail1">Email : </label>
+                    <input onfocus="highlight(this)" onblur="regular(this)" id="exampleInputEmail1" aria-describedby="emailhelp" type="email" title="email" placeholder="ex@Bond@xyz.com" required />
+                    
+                </div>
+                <div class="form-content">
+                    <label for="password">Password : </label>
+                    <input onfocus="highlight(this)" onblur="regular(this)" id="password" type="password" title="password" placeholder="ex@Password" required />    
+                </div>
+                <div class="form-content">
+                    <label for="confrimPassword">Confirm Password : </label>
+                    <input onfocus="highlight(this)" onblur="regular(this)" id="confirmPassword" type="password" title="cnfpassword" placeholder="ex@ReWritePassword" required />
+                    
+                </div>
+                <div class="form-content">
+                    <p>
+                        <label for="message" >Enter Message :
+                        <textarea onfocus="highlightTA(this)" onblur="regularTA(this)" name="message" id="message" cols="20" rows="3" placeholder="Write your message here" style="padding-top: 0;" ></textarea>
+                        </label>
+                    </p>        
+                </div>
+                <div class="form-content">
+                    <p style="color: black;">Age: 
+                        <input type="radio" id="above" name="age" value="above" required >
+                        <label style="color: slategrey;" for="above">Above 18</label>
+                        <input type="radio" id="below" name="age" value="below" required >
+                        <label style="color: slategrey;" for="below">Below 18</label>
+                    </p> 
+                </div>
+                <div class="form-content">
+                    <button type="submit" class="btn btn-light btn-lg">Submit</button>
+                </div>
+            
+            </form>
+        </div>   
+        
+    </section>
+  <!-- Beautify Ends -->
+  <script src="form.js"></script>
+</body>
+</html>
